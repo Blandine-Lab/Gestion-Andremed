@@ -1,0 +1,76 @@
+/* ===== BASE REACT ===== */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* ===== LOGO SPIN ===== */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== 🔥 TITRE ANIMÉ ===== */
+.animated-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+  animation: moveText 2s infinite alternate ease-in-out;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* mouvement vertical */
+@keyframes moveText {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(12px);
+  }
+}
+
+/* ===== ✨ BONUS PRO ===== */
+
+/* effet hover bouton (si tu veux plus tard) */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* transition douce globale */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* scroll plus fluide */
+html {
+  scroll-behavior: smooth;
+}
