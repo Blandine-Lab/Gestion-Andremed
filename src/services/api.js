@@ -1,7 +1,6 @@
 ﻿import axios from 'axios';
 
-// Forcer l'URL de Render avec /api
-const API_URL = 'https://andremed-backend.onrender.com/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 console.log('🔧 API_URL utilisée:', API_URL);
 
 const api = axios.create({
